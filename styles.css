@@ -1,7 +1,43 @@
-ul {
-    list-style: none;
+body {
+    /* font-family: sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
 }
 
-ul a {
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+main {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+header ul a {
     text-decoration: none;
+    color: white;
 }
