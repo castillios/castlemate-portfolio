@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
     <title>Castlemate Webdesign</title>
 </head>
 <body>
     <header>
-        <div class="logo">CLMT</div>
+        <div class="logo">
+            <span>CL</span>
+            <span>MT</span>
+        </div>
         <nav>
             <ul>
                 <li><a href="#services">services</a></li>
@@ -19,18 +25,22 @@
     </header>
 
     <main class="feed">
-        <section id="hero" class="card hero">
-            <h1>CASTLEMATE</h1>
-            <h2>Web Design</h2> <!--will probably change this tag to something other than h3, kelly learned: "Headings define document structure, not visual size."-->
-            <p>Design that rules.</p>
-            <p>Tower over your competition with Castlemate.</p>
+        <section class="card hero"> <!-- maleah: utilized divs since grouping is purely for stylistic purposes. semantically fits within hero card-->
+            <div class="page-title">
+                <h1>CASTLEMATE</h1>
+                <h2>Web Design</h2> <!--kelly learned: "Headings define document structure, not visual size."-->
+            </div>
+            <div class="highlight">
+                <p>Design that rules.</p>
+                <p>Tower over your competition with Castlemate.</p>
+            </div>
         </section>
-        <section id="about" class="card about">
+        <section class="card about">
             <h2>Hello! We're Castlemate.</h2>
             <p>Lorem ipsum dolor sit amet,...</p>
             <a href="#about" class="btn">about us</a> <!-- style like a button! -->
         </section>
-        <section id="quote" class="card quote">
+        <section class="card quote">
             <blockquote>
                 <p>"If you have built castles in the air, your work need not be lost. That is where they should be. Now put the foundations under them." - Henry David Thoreau</p>
             </blockquote>
