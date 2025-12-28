@@ -81,6 +81,34 @@ h2 {
     color:#EBDEC8;
 }
 
+.about-description p {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+blockquote {
+    font-size: 40px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+
+#quote-author {
+    font-size: 36px;
+    text-align: right;
+}
+
+.card.services h2 {
+    color: #EBDEC8;
+    text-align: center;
+}
+
+.card.services p {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+
 /* || Layouts */
 /* ... Containers, sections, etc */
 
@@ -96,6 +124,8 @@ h2 {
     margin: 0 auto;
     /* padding: 3rem 1.5rem; */
 }
+
+/* Hero */
 
 .card.hero {
     display: flex;
@@ -117,6 +147,8 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
+/* Hello! We're Castlemate. */
 
 .card.about {
     width: 100%;
@@ -147,24 +179,49 @@ h2 {
 .about-description h2 {
     margin:0em;
 }
+
 .about-description .btn {
     align-self: flex-end;
 }
 
+/* Quote */
+
 .quote {
-  font-style: italic;
+    padding: 1rem 3rem;
 }
 
-.services {
-  background: #f5f5f5;
+blockquote p{
+    margin: 0;
 }
+
+/* What We Offer */
+
+.card.services {
+    width: 100%;
+    color: #EBDEC8;
+    background-color: #2F2F2F;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer-description {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .services {
+  background: #f5f5f5;
+} */
 
 /* || Header, Footer and Nav */
 /* ... Logo, header, nav menus */
 
 header {
     /* color: #2F2F2F; */
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -192,7 +249,7 @@ header ul {
 
 header ul a {
     color: #2F2F2F;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .logo {
@@ -216,6 +273,42 @@ header ul a {
 /* || Components */
 /* ... Buttons, carousels, etc */
 
+/* About Us Button */
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.2em;
+    border-radius: 66px;
+
+    background-color: #A5917A;
+    color: #2F2F2F;
+
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+
+    -webkit-box-shadow: 9px 9px 0px 5px rgba(0,0,0,0.35); 
+    box-shadow: 9px 9px 0px 5px rgba(0,0,0,0.35);
+
+}
+
+.btn:hover {
+  background-color: #8d7c69;
+}
+
+.btn:active {
+  transform: translateY(1px);
+
+  -webkit-box-shadow: 7px 7px 0px 5px rgba(0,0,0,0.35); 
+  box-shadow: 7px 7px 0px 5px rgba(0,0,0,0.35);
+}
+
 
 /* || Utilities */
 /* ... Helper classes, hidden styles, etc */
+a { 
+    text-decoration: none;
+}
+
+
+/* Scrollbar */
