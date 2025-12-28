@@ -109,6 +109,35 @@ blockquote {
     text-align: center;
 }
 
+.card.action p {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* Footer Typography (idk how to section this maleah!!!) */
+.company-name {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: #2F2F2F;
+    border-radius: 50%;
+}
+
+.company-focus {
+    font-size: 24px;
+}
+
+.footer-right a {
+    color: #2F2F2F;
+    text-decoration: none;
+    font-weight: 500;
+}
+
 /* || Layouts */
 /* ... Containers, sections, etc */
 
@@ -212,9 +241,73 @@ blockquote p{
     flex-direction: column;
 }
 
+.service-buttons {
+    width: 70%;
+    padding: 16px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 8px;
+}
+
+.service-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+
+    /* copied from button styling */
+    padding: 0.5em 1.2em;
+    border-radius: 33px;
+
+    background-color: #A5917A;
+    color: #EBDEC8;
+
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+
+    /* -webkit-box-shadow: 9px 9px 0px 5px rgba(0,0,0,0.35); 
+    box-shadow: 9px 9px 0px 5px rgba(0,0,0,0.35); */
+}
 /* .services {
   background: #f5f5f5;
 } */
+
+/* Action Card */
+.card.action {
+    color: #EBDEC8;
+    background-color: #2F2F2F;
+    padding: 2em;
+
+    width: 100%;
+}
+
+.card.action .wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card.action p {
+    flex: 1;
+    text-align: left;
+}
+
+.card.action a {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.card.action .wrapper .btn {
+    background-color: white;
+}
 
 /* || Header, Footer and Nav */
 /* ... Logo, header, nav menus */
@@ -228,14 +321,21 @@ header {
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    padding: 0.5rem;
+    background-color: #EBDEC8;
+    color: #2F2F2F;
+
+    padding: 1.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 1em;
 }
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
 
 header ul {
     list-style: none;
