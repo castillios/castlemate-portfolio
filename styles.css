@@ -340,23 +340,6 @@ header {
     align-items: center;
 }
 
-footer {
-    background-color: #EBDEC8;
-    color: #2F2F2F;
-
-    padding: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-left {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-
 header ul {
     list-style: none;
     display: flex;
@@ -372,23 +355,56 @@ header ul a {
     /* text-decoration: none; */
 }
 
+.logo img {
+    width: auto;
+    height: 100px;
+}
+
+/* 
 .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .chess-piece {
+    width: auto;
+    height: 4rem;
+    flex-shrink: 0;
+}
+
+.logo-text {
     font-family: "Zen Antique";
     font-weight: 400;
     font-size: 48px;
     text-align: center;
 
-    /* ensures a tight fit between "CL" and "MT" */
+    ensures a tight fit between "CL" and "MT"
     line-height: .9;
     letter-spacing: -0.06em;
 
-    /* creates a square bounding box depending on font size */
+    creates a square bounding box depending on font size
     width: 2.1em;
     height: 2.1em;
-}
+}*/
 
 .logo span {
     display: block;
+} */
+
+footer {
+    background-color: #EBDEC8;
+    color: #2F2F2F;
+
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
 }
 /* || Components */
 /* ... Buttons, carousels, etc */
