@@ -15,6 +15,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -206,7 +207,8 @@ blockquote {
     flex-direction: column;
 }
 .about-description h2 {
-    margin:0em;
+    width: max-content;
+    margin: 0em;
 }
 
 .about-description .btn {
