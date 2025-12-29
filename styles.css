@@ -161,10 +161,16 @@ blockquote {
     display: flex;
     flex-direction: column;
 
+    position: relative; /* allows us to overlay our chess piece image over two divs */
+
     width: 100%;
     height: 100vh;
 
     margin-top: 4rem;
+}
+
+.page-title {
+    margin-bottom: 6em;
 }
 
 .highlight {
@@ -176,6 +182,18 @@ blockquote {
 
     display: flex;
     justify-content: center;
+    gap: 50px;
+}
+
+
+/* got stuck on this one, used mr gpt to give me initial code for absolute pos, then tweaked it & added my own comments - m*/
+.card.hero .chess-piece {
+    position: absolute; /* removes chesspiece from document flow (flexbox in this case) */
+    width: 300px;
+    bottom: 1%;
+    left: 38%;
+    transform: rotate(-10deg); /* move chess piece to the left, then rotate*/
+    z-index: 10; /* keeps chess piece on very top */ 
 }
 
 /* Hello! We're Castlemate. */
