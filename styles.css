@@ -454,11 +454,51 @@ a {
 
 
 /* Page: Services */
-/*      see .card.services, .all-services */
+/*      see ".card.services, .all-services" */
 
 .all-services {
     flex-grow: 1;
+    position: relative;
 }
 .all-services .service-buttons a {
     border-radius: 0px;
+    position: relative;
+
+    display: block;
+}
+
+/* from mr. gpt, but better if we just go with a svg */
+/* .all-services::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+
+    background:
+        repeating-linear-gradient(
+            90deg,
+            #2F2F2F 0 8vw,
+            transparent 8vw 14vw
+        );
+} */
+
+.services-chess-piece {
+    position: absolute;
+    width: 72px;
+    top: -100px;
+    left: -24px;
+
+    transform: translateX(0) scale(1) ;
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.service-card {
+    position: relative;
+    width: 320px;
+}
+.service-card:hover .services-chess-piece {
+    transform: translateY(-10px) scale(1.08) rotate(-4deg);
+    filter: drop-shadow(0 8px 12px rgba(0,0,0,0.25));
 }
