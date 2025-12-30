@@ -169,7 +169,7 @@ blockquote {
 .card.hero .chess-piece {
     position: absolute; /* removes chesspiece from document flow (flexbox in this case) */
     width: 300px;
-    bottom: 1%;
+    bottom: 15%;
     left: 40%;
     transform: rotate(-10deg); /* move chess piece to the left, then rotate*/
     z-index: 10; /* keeps chess piece on very top */ 
