@@ -527,13 +527,15 @@ a {
 .webdesign-highlight h2 {
     color: white;
     max-width: 50%;
-    padding-right: 10rem;
+    padding-left: 50%;
+    padding-right: 10%;
     margin-bottom: 0;
 }
 
 .webdesign-highlight p {
     max-width: 50%;
-    padding-right: 10rem;
+    padding-left: 50%;
+    padding-right: 10%;
     font-size: 36px;
 }
 
