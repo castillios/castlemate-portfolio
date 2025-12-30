@@ -223,13 +223,14 @@ blockquote p{
 
 /* What We Offer */
 
-.card.services {
+.card.services, .all-services {
     width: 100%;
     color: #EBDEC8;
     background-color: #2F2F2F;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -450,3 +451,14 @@ a {
 
 
 /* Scrollbar */
+
+
+/* Page: Services */
+/*      see .card.services, .all-services */
+
+.all-services {
+    flex-grow: 1;
+}
+.all-services .service-buttons a {
+    border-radius: 0px;
+}
