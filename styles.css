@@ -83,7 +83,7 @@ header ul a {
     position: absolute; /* removes from normal document flow */
     background-color: #EBDEC8;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 2px solid #2F2F2F; /* DESIGN: hm might change this style later, or do shadow instead? -m */
     z-index: 1;
 }
 
@@ -117,7 +117,7 @@ footer {
     gap: 0.75rem;
 }
 
-/* Footer Typography (idk how to section this maleah!!!) */
+/* Footer Typography */
 .company-name {
     font-weight: 600;
     font-size: 32px;
@@ -475,8 +475,9 @@ blockquote p{
 }
 
 
-/* || Layout Page: Web Design */
-.webdesign-highlight {
+/* || Layout Page: Web Design, Marketing, Graphic Design */
+/* NOTE: classes for graphic design and marketing pages still need to be renamed for clarity - m */
+.webdesign-highlight{
     flex-grow: 1;
     width: 100%;
     
@@ -567,6 +568,37 @@ blockquote p{
     text-align: left;
 
 }
+
+
+/* About Us */
+.about-highlight {
+    flex-grow: 1;
+    width: 100%;
+
+    color: #EBDEC8;
+    background-color: #2F2F2F; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* copy and pasted from index.html about wrapper */
+.about-wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-wrapper img {
+    width: 50%;
+    border-radius: 33px;
+}
+
 
 /* responsive layout for small windows & mobile: specifications can be changed later -m */
 @media (max-width: 1000px) {
