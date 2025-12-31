@@ -308,7 +308,7 @@ blockquote p{
     background-color: white;
 }
 
-/* || Header, Footer and Nav */
+/* || Nav, Header and Footer */
 /* ... Logo, header, nav menus */
 
 header {
@@ -317,7 +317,31 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background-color: #EBDEC8;
+
+    top: 0;
+    position: sticky;
+    z-index: 10;
 }
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding-right: 1em;
+}
+
+.logo img {
+    width: auto;
+    height: 100px;
+    margin: 0;
+}
+/* 
+.header-left nav {
+    padding: 0;
+} */
 
 header ul {
     list-style: none;
@@ -325,50 +349,40 @@ header ul {
     gap: 1em;
 
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
+    align-items: center;
+
+    padding: 0;
 }
 
 header ul a {
     color: #2F2F2F;
-    /* text-decoration: none; */
 }
 
-.logo img {
-    width: auto;
-    height: 100px;
+
+.dropdown-content {
+    display: none;
+    position: absolute; /* removes from normal document flow */
+    background-color: #EBDEC8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-/* 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo .chess-piece {
-    width: auto;
-    height: 4rem;
-    flex-shrink: 0;
-}
-
-.logo-text {
-    font-family: "Zen Antique";
-    font-weight: 400;
-    font-size: 48px;
-    text-align: center;
-
-    ensures a tight fit between "CL" and "MT"
-    line-height: .9;
-    letter-spacing: -0.06em;
-
-    creates a square bounding box depending on font size
-    width: 2.1em;
-    height: 2.1em;
-}
-
-.logo span {
+.dropdown-content a {
+    padding: 12px 16px;
     display: block;
-}*/
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #d3c8b4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 footer {
     background-color: #EBDEC8;
@@ -453,7 +467,7 @@ a {
 /* Scrollbar */
 
 
-/* Page: Services */
+/* || Page: Services */
 /*      see ".card.services, .all-services" */
 
 .all-services {
