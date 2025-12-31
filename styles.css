@@ -62,7 +62,6 @@ header {
 } */
 
 header ul {
-    list-style: none;
     display: flex;
     gap: 1em;
 
@@ -139,46 +138,6 @@ footer {
     color: #2F2F2F;
     text-decoration: none;
     font-weight: 500;
-}
-
-/* || Components */
-/* ... Buttons, carousels, etc */
-
-/* About Us Button */
-.btn {
-    display: inline-block;
-    padding: 0.5em 1.2em;
-    border-radius: 66px;
-
-    background-color: #A5917A;
-    color: #2F2F2F;
-
-    font-size: 32px;
-    font-weight: 600;
-    text-align: center;
-    cursor: pointer;
-
-    -webkit-box-shadow: 9px 9px 0px 5px rgba(0,0,0,0.35); 
-    box-shadow: 9px 9px 0px 5px rgba(0,0,0,0.35);
-
-}
-
-.btn:hover {
-  background-color: #8d7c69;
-}
-
-.btn:active {
-  transform: translateY(1px);
-
-  -webkit-box-shadow: 7px 7px 0px 5px rgba(0,0,0,0.35); 
-  box-shadow: 7px 7px 0px 5px rgba(0,0,0,0.35);
-}
-
-
-/* || Utilities */
-/* ... Helper classes, hidden styles, etc */
-a { 
-    text-decoration: none;
 }
 
 /* || Typography */
@@ -464,7 +423,7 @@ blockquote p{
 }
 
 
-/* || Page: Services */
+/* || Layout Page: Services */
 /*      see ".card.services, .all-services" */
 
 .all-services {
@@ -516,7 +475,7 @@ blockquote p{
 }
 
 
-/* Web Design Page */
+/* || Layout Page: Web Design */
 .webdesign-highlight {
     flex-grow: 1;
     width: 100%;
@@ -559,4 +518,52 @@ blockquote p{
     z-index: 10;
 
     filter: drop-shadow(0 8px 12px white);
+}
+
+.card-info {
+    flex-grow: 1;
+}
+
+/* || Components */
+/* ... Buttons, carousels, etc */
+
+/* About Us Button */
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.2em;
+    border-radius: 66px;
+
+    background-color: #A5917A;
+    color: #2F2F2F;
+
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+
+    -webkit-box-shadow: 9px 9px 0px 5px rgba(0,0,0,0.35); 
+    box-shadow: 9px 9px 0px 5px rgba(0,0,0,0.35);
+
+}
+
+.btn:hover {
+  background-color: #8d7c69;
+}
+
+.btn:active {
+  transform: translateY(1px);
+
+  -webkit-box-shadow: 7px 7px 0px 5px rgba(0,0,0,0.35); 
+  box-shadow: 7px 7px 0px 5px rgba(0,0,0,0.35);
+}
+
+
+/* || Utilities */
+/* ... Helper classes, hidden styles, etc */
+a { 
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
