@@ -26,6 +26,161 @@ body {
     padding: 0;
 }
 
+/* || Nav, Header and Footer */
+/* ... Logo, header, nav menus */
+
+header {
+    /* color: #2F2F2F; */
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #EBDEC8;
+
+    top: 0;
+    position: sticky;
+    z-index: 10;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding-right: 1em;
+}
+
+.logo img {
+    width: auto;
+    height: 100px;
+    margin: 0;
+}
+/* 
+.header-left nav {
+    padding: 0;
+} */
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+
+    padding: 0;
+}
+
+header ul a {
+    color: #2F2F2F;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute; /* removes from normal document flow */
+    background-color: #EBDEC8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #d3c8b4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+footer {
+    background-color: #EBDEC8;
+    color: #2F2F2F;
+
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Footer Typography (idk how to section this maleah!!!) */
+.company-name {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: #2F2F2F;
+    border-radius: 50%;
+}
+
+.company-focus {
+    font-size: 24px;
+}
+
+.footer-right a {
+    color: #2F2F2F;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* || Components */
+/* ... Buttons, carousels, etc */
+
+/* About Us Button */
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.2em;
+    border-radius: 66px;
+
+    background-color: #A5917A;
+    color: #2F2F2F;
+
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+
+    -webkit-box-shadow: 9px 9px 0px 5px rgba(0,0,0,0.35); 
+    box-shadow: 9px 9px 0px 5px rgba(0,0,0,0.35);
+
+}
+
+.btn:hover {
+  background-color: #8d7c69;
+}
+
+.btn:active {
+  transform: translateY(1px);
+
+  -webkit-box-shadow: 7px 7px 0px 5px rgba(0,0,0,0.35); 
+  box-shadow: 7px 7px 0px 5px rgba(0,0,0,0.35);
+}
+
+
+/* || Utilities */
+/* ... Helper classes, hidden styles, etc */
+a { 
+    text-decoration: none;
+}
+
 /* || Typography */
 /* ... Styles for headings, links, paragraphs  */
 
@@ -307,164 +462,6 @@ blockquote p{
 .card.action .wrapper .btn {
     background-color: white;
 }
-
-/* || Nav, Header and Footer */
-/* ... Logo, header, nav menus */
-
-header {
-    /* color: #2F2F2F; */
-    padding: 1rem 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: #EBDEC8;
-
-    top: 0;
-    position: sticky;
-    z-index: 10;
-}
-
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-    padding-right: 1em;
-}
-
-.logo img {
-    width: auto;
-    height: 100px;
-    margin: 0;
-}
-/* 
-.header-left nav {
-    padding: 0;
-} */
-
-header ul {
-    list-style: none;
-    display: flex;
-    gap: 1em;
-
-    font-weight: 500;
-    font-size: 30px;
-    text-align: center;
-    align-items: center;
-
-    padding: 0;
-}
-
-header ul a {
-    color: #2F2F2F;
-}
-
-
-.dropdown-content {
-    display: none;
-    position: absolute; /* removes from normal document flow */
-    background-color: #EBDEC8;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    padding: 12px 16px;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #d3c8b4;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-footer {
-    background-color: #EBDEC8;
-    color: #2F2F2F;
-
-    padding: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-left {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-/* Footer Typography (idk how to section this maleah!!!) */
-.company-name {
-    font-weight: 600;
-    font-size: 32px;
-}
-
-.dot {
-    width: 6px;
-    height: 6px;
-    background-color: #2F2F2F;
-    border-radius: 50%;
-}
-
-.company-focus {
-    font-size: 24px;
-}
-
-.footer-right a {
-    color: #2F2F2F;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-/* || Components */
-/* ... Buttons, carousels, etc */
-
-/* About Us Button */
-.btn {
-    display: inline-block;
-    padding: 0.5em 1.2em;
-    border-radius: 66px;
-
-    background-color: #A5917A;
-    color: #2F2F2F;
-
-    font-size: 32px;
-    font-weight: 600;
-    text-align: center;
-    cursor: pointer;
-
-    -webkit-box-shadow: 9px 9px 0px 5px rgba(0,0,0,0.35); 
-    box-shadow: 9px 9px 0px 5px rgba(0,0,0,0.35);
-
-}
-
-.btn:hover {
-  background-color: #8d7c69;
-}
-
-.btn:active {
-  transform: translateY(1px);
-
-  -webkit-box-shadow: 7px 7px 0px 5px rgba(0,0,0,0.35); 
-  box-shadow: 7px 7px 0px 5px rgba(0,0,0,0.35);
-}
-
-
-/* || Utilities */
-/* ... Helper classes, hidden styles, etc */
-a { 
-    text-decoration: none;
-}
-
-
-/* Scrollbar */
 
 
 /* || Page: Services */
