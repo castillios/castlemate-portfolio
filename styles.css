@@ -694,12 +694,25 @@ blockquote p{
     background-color: white;
 }
 
+.textarea-wrapper {
+    width: 100%;
+    background-color: #EBDEC8;
+    border-radius: 12px;
+    padding: 1.5rem 1rem 3rem 1rem;
+
+    flex: 1;
+    display: flex;
+}
+
 .cs-textarea {
     flex: 1;
-    border: solid #EBDEC8;
-    border-width: 2rem 1rem 3rem 1rem;
+    width: 100%;
+
+    border: none;
+    background-color: white;
+    border-radius: 8px;
     
-    overflow: hidden;
+    resize: none;
 }
 
 /* .form-right button {
