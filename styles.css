@@ -723,6 +723,12 @@ blockquote p{
     right: 2rem;
 
     z-index: 2;
+
+    background-color: #2F2F2F;
+    color: white;
+    border-radius: 12px;
+    min-width: 75px;
+    min-height: 30px;
 }
 
 
