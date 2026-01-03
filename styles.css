@@ -676,7 +676,6 @@ blockquote p{
     flex: 1;
     display: flex;
     flex-direction: column;
-
 }
 
 .cs-input {
@@ -702,6 +701,9 @@ blockquote p{
 
     flex: 1;
     display: flex;
+
+    /* for button */
+    position: relative;
 }
 
 .cs-textarea {
@@ -715,9 +717,13 @@ blockquote p{
     resize: none;
 }
 
-/* .form-right button {
-    margin-top: auto;
-} */
+.cs-submit {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+
+    z-index: 2;
+}
 
 
 /* || Components */
