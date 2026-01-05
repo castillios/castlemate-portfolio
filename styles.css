@@ -293,11 +293,10 @@ blockquote {
 
 .card.about {
     width: 100%;
-    padding: 4rem 0;
+    padding: 4rem 4rem;
 }
 
 .card.about .wrapper {
-    max-width: 60%;
     margin: 0 auto;
 
     display: flex;
@@ -305,13 +304,18 @@ blockquote {
     gap: 2rem;
 }
 
-.card.about img {
-    width: 50%;
+/* Includes about-wrapper for about pages & individual about pages */
+.card.about img, .about-wrapper img  {
+    width: 550px;
+    height: 450px;
+    flex-shrink: 0;
+
     border-radius: 33px;
+    background-color: grey;
 }
 
 .about-description {
-    width: 50%;
+    /* width: 50%; */
 
     display: flex;
     flex-direction: column;
@@ -566,6 +570,7 @@ blockquote p{
 .about-highlight {
     flex-grow: 1;
     width: 100%;
+    padding: 4rem 4rem;
 
     color: #EBDEC8;
     background-color: #2F2F2F; 
@@ -578,7 +583,6 @@ blockquote p{
 
 /* copy and pasted from index.html about wrapper */
 .about-wrapper {
-    max-width: 60%;
     margin: 0 auto;
 
     display: flex;
@@ -587,11 +591,13 @@ blockquote p{
 }
 
 .about-wrapper img {
-    width: 50%;
+    width: 550px;
+    height: 450px;
+    flex-shrink: 0;
     border-radius: 33px;
 }
 
-
+/* About Us Photo Grid */
 /* responsive layout for small windows & mobile: specifications can be changed later -m */
 @media (max-width: 1000px) {
     .card-grid {
@@ -604,6 +610,13 @@ blockquote p{
         max-width: 450px;
     }
 }
+
+/* About Us Individual Pages */
+.about-description .individual-desc {
+    flex-grow: 1;
+    font-size: 24px;
+}
+
 
 /* Contact Us */
 .contact-us {
