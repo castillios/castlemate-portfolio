@@ -2,6 +2,7 @@
     COLOR PALETTE
         Dark Grey: #2F2F2F
         Light Tan: #EBDEC8
+        Dark Tan: #A5917A
         Coffee Brown: #A5917A
 
     FONTS
@@ -306,17 +307,15 @@ blockquote {
 
 /* Includes about-wrapper for about pages & individual about pages */
 .card.about img, .about-wrapper img  {
-    width: 550px;
-    height: 450px;
+    width: 40%;
     flex-shrink: 0;
 
     border-radius: 33px;
-    background-color: grey;
+    background-color: red;
 }
 
-.about-description {
-    /* width: 50%; */
 
+.about-description {
     display: flex;
     flex-direction: column;
 }
@@ -443,6 +442,7 @@ blockquote p{
 
 .all-services h3 {
     color: white;
+    /* font-size: 28px; */
 }
 
 
@@ -590,13 +590,6 @@ blockquote p{
     gap: 2rem;
 }
 
-.about-wrapper img {
-    width: 550px;
-    height: 450px;
-    flex-shrink: 0;
-    border-radius: 33px;
-}
-
 /* About Us Photo Grid */
 /* responsive layout for small windows & mobile: specifications can be changed later -m */
 @media (max-width: 1000px) {
@@ -612,10 +605,31 @@ blockquote p{
 }
 
 /* About Us Individual Pages */
-.about-description .individual-desc {
-    flex-grow: 1;
+
+.individual .about-wrapper {
+    gap: 4rem;
+}
+.individual .about-wrapper img {
+    height: 600px;
+    width: auto;
+}
+
+.individual h3 {
+    font-size: 32px;
+    color: #A5917A;
+    margin: 1rem 0;
+}
+
+/* for grouped p tags */
+.individual .desc-wrapper {
+    margin: 0 auto;
+}
+
+/* for each p tag*/
+.about-description .desc {
     font-size: 24px;
 }
+
 
 
 /* Contact Us */
