@@ -442,7 +442,7 @@ blockquote p{
 
 .all-services h3 {
     color: white;
-    /* font-size: 28px; */
+    font-size: 28px;
 }
 
 
@@ -480,7 +480,6 @@ blockquote p{
 
 
 /* || Layout Page: Web Design, Marketing, Graphic Design */
-/* NOTE: classes for graphic design and marketing pages still need to be renamed for clarity - m */
 .subservices-highlight{
     flex-grow: 1;
     width: 100%;
