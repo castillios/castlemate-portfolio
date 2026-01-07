@@ -311,7 +311,6 @@ blockquote {
     flex-shrink: 0;
 
     border-radius: 33px;
-    background-color: red;
 }
 
 
@@ -531,6 +530,19 @@ blockquote p{
     padding: 2rem 0;
 }
 
+/* responsive layout for small windows & mobile: specifications can be changed later -m */
+@media (max-width: 1000px) {
+    .card-grid {
+        grid-template-columns: 1fr; /* single column */
+        column-gap: 0;
+    }
+
+    .info-card {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
 .card-grid h3 {
     color: white;
     text-align: left;
@@ -590,17 +602,40 @@ blockquote p{
 }
 
 /* About Us Photo Grid */
-/* responsive layout for small windows & mobile: specifications can be changed later -m */
-@media (max-width: 1000px) {
-    .card-grid {
-        grid-template-columns: 1fr; /* single column */
-        column-gap: 0;
-    }
+.meet-the-team h2 {
+    text-align: center;
+}
 
-    .info-card {
-        width: 100%;
-        max-width: 450px;
-    }
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 4rem;
+    column-gap: 5%;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.member-card {
+    width: 100%;
+    height: 400px;
+    transition: transform 0.3s ease;
+    /* padding: 1.5rem; */
+    /* gap: 2rem; */
+    /* background-color: #A5917A; */
+    /* color: #EBDEC8; */
+}
+
+.member-card:hover {
+    transform: scale(1.1);
+}
+
+/* NOTE: VERY temporary cheesed fix. need to change later, possibly turn into absolute element -m */
+#member-chess {
+    width: auto;
+    /* left: 10%; */
+    transform: translateX(20%);
 }
 
 /* About Us Individual Pages */
@@ -624,7 +659,7 @@ blockquote p{
     margin: 0 auto;
 }
 
-/* for each p tag*/
+/* for each individual p tag*/
 .about-description .desc {
     font-size: 24px;
 }
