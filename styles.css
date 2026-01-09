@@ -617,14 +617,17 @@ blockquote p{
     padding: 2rem 0;
 }
 
+
 .member-card {
     width: 100%;
     height: 400px;
     transition: transform 0.3s ease;
-    /* padding: 1.5rem; */
-    /* gap: 2rem; */
-    /* background-color: #A5917A; */
-    /* color: #EBDEC8; */
+
+}
+
+.member-card img {
+    width: 100%;
+    height: 400px;
 }
 
 .member-card:hover {
@@ -634,7 +637,6 @@ blockquote p{
 /* NOTE: VERY temporary cheesed fix. need to change later, possibly turn into absolute element -m */
 #member-chess {
     width: auto;
-    /* left: 10%; */
     transform: translateX(20%);
 }
 
@@ -816,7 +818,7 @@ blockquote p{
     padding: 0.5em 1.2em;
     border-radius: 66px;
 
-    background-color: #A5917A;
+    background-color: #EBDEC8;
     color: #2F2F2F;
 
     font-size: 32px;
@@ -830,7 +832,7 @@ blockquote p{
 }
 
 .btn:hover {
-  background-color: #8d7c69;
+  /* background-color: white; */
 }
 
 .btn:active {
@@ -840,11 +842,11 @@ blockquote p{
   box-shadow: 7px 7px 0px 5px rgba(0,0,0,0.35);
 }
 
-.card.action .btn{
+.btn{
     transition: transform 0.3s ease;
 }
 
-.card.action .btn:hover{
+.btn:hover{
     transform: scale(1.1);
 }
 
