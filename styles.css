@@ -31,7 +31,6 @@ body {
 /* ... Logo, header, nav menus */
 
 header {
-    /* color: #2F2F2F; */
     padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -57,10 +56,7 @@ header {
     height: 100px;
     margin: 0;
 }
-/* 
-.header-left nav {
-    padding: 0;
-} */
+
 
 header ul {
     display: flex;
@@ -145,7 +141,6 @@ footer {
 /* ... Styles for headings, links, paragraphs  */
 
 /* fallback, used if browser doesn't support webkit*/
-
 h1 {
     color: #EBDEC8;
     font-size: 128px;
@@ -241,12 +236,10 @@ blockquote {
     flex-direction: column;
 
     width: 100%; /* moved from .card to .feed */
-    /* gap: 4em; */
 }
 
 .card {
     margin: 0 auto;
-    /* padding: 3rem 1.5rem; */
 }
 
 /* Hero */
@@ -279,8 +272,7 @@ blockquote {
     gap: 40px;
 }
 
-
-/* got stuck on this one, used mr gpt to give me initial code for absolute pos, then tweaked it & added my own comments - m*/
+/* 'floating' chess piece on hero */
 .card.hero .chess-piece {
     position: absolute; /* removes chesspiece from document flow (flexbox in this case) */
     width: 300px;
@@ -384,13 +376,7 @@ blockquote p{
     font-weight: 600;
     text-align: center;
     cursor: pointer;
-
-    /* -webkit-box-shadow: 9px 9px 0px 5px rgba(0,0,0,0.35); 
-    box-shadow: 9px 9px 0px 5px rgba(0,0,0,0.35); */
 }
-/* .services {
-  background: #f5f5f5;
-} */
 
 /* Action Card */
 .card.action {
@@ -576,8 +562,7 @@ blockquote p{
 
 }
 
-
-/* About Us */
+/* || Layout Page: About Us */
 .about-highlight {
     flex-grow: 1;
     width: 100%;
@@ -640,7 +625,7 @@ blockquote p{
     transform: translateX(20%);
 }
 
-/* About Us Individual Pages */
+/* || Layout Page: About Us Individual Pages */
 
 .individual .about-wrapper {
     gap: 4rem;
@@ -667,8 +652,7 @@ blockquote p{
 }
 
 
-
-/* Contact Us */
+/* || Layout Page: Contact Us */
 .contact-us {
     background-color: #2F2F2F;
 }
@@ -831,8 +815,8 @@ blockquote p{
 
 }
 
-.btn:hover {
-  /* background-color: white; */
+.btn:hover{
+    transform: scale(1.1);
 }
 
 .btn:active {
@@ -846,10 +830,6 @@ blockquote p{
     transition: transform 0.3s ease;
 }
 
-.btn:hover{
-    transform: scale(1.1);
-}
-
 
 /* || Utilities */
 /* ... Helper classes, hidden styles, etc */
@@ -861,11 +841,7 @@ li {
     list-style: none;
 }
 
-/* Mr. GPT told me to add this.. it fixed my problem
-        and then he claimed that it is best practice and should always be set
-        and looks like mr oak harbor also does this 
-        
-        but adding this broke the service pages!!! */
+/* CSS reset: best practice! */
 *, *::before, *::after {
     box-sizing: border-box;
 }
